@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(./image/image.png);
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background-image: url(./image/download.jpg);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 12px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: beige;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+   
+}
+
+button:hover {
+  
+  animation: box 3s infinite;
+  filter:  drop-shadow(0 0 10px blue);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  background-image: url(none);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+li > span {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 6px;
+  margin: 2px 0;
+  border-radius: 4px;
+  font-size: 0.8em;
+  color: #fff;
+}
+
+.Friend {
+   filter:  drop-shadow(0 0 10px blue);
+}
+.Family {
+  background-color: green;
+}
+.Colleague {
+  background-color: purple;
+}
+
+small {
+  color: #555;
+  font-size: 0.75em;
+  margin-top: 4px;
+}
+
+li button {
+  margin-top: 6px;
+  margin-right: 6px;
+}
+
+li button:not(:last-child) {
+  margin-right: 5px;
+}
+
+li .button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  margin-top: 8px;
+}

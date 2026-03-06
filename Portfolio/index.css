@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.4);
+backdrop-filter: blur(8px);
+    background-repeat:  no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    color: aliceblue;
+    padding-top: 80px;
+}
+.header {
+     position: fixed;
+    FONT-FAMILY: Amatic SC;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px;
+    width:100%;
+    top:0%;
+    background-color: transparent;
+  z-index: 1000; 
+
+}
+
+.logo {
+  font-family: Amatic SC;
+  font-size: 1pc;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: none;
+}
+
+.home-content {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    max-width: 50%;
+    margin: 0 ;
+    text-align: left;
+    font-family: Arial,sans-serif;
+    FONT-SIZE: 1.1rem;
+    flex: 1;
+}
+.home-image, .about-image, .service-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image::before, .about-image::before, .service-image::before {
+    content: '';
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border: 3px solid transparent;
+    border-bottom: 3px solid #7cf03d;
+    border-radius: 50%;
+    animation: rotate-border 2s linear infinite;
+    z-index: 1;
+}
+
+.home-image img,  .service-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: grayscale(20%);
+    padding: 8px;
+    position: relative;
+    z-index: 2;
+}
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+  gap: 20px; 
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 3.5px;
+    font-family: Amatic SC;
+    FONT-SIZE: 1.1rem
+    
+    
+}
+.navbar a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #00bcd4;
+    background: rgba(0, 188, 212, 0.1);
+}
+.about-image {
+    
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    order: 1;
+    
+}
+.about-content {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    max-width: 50%;
+    order: 2;
+    
+    font-family: Arial,sans-serif;
+    FONT-SIZE: 1.1rem;
+    
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 40px; /* controls spacing between image and content */
+}
+.service-image {
+    
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    order: 2;
+    
+}
+.service-content {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    max-width: 50%;
+    order: 1;
+    
+    font-family: Arial,sans-serif;
+    FONT-SIZE: 1.1rem;
+    
+}
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 40px; /* controls spacing between image and content */
+}
+.home-img .img-box::before,
+.home-img .img-box::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent, transparent, transparent, #7cf03d);
+    transform: rotate(0deg);
+    animation: rotate-border 10s linear infinite;
+}
+
+@keyframes rotate-border {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.about-image::before {
+    content: '';
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border: 3px solid transparent;
+    border-bottom: 3px solid #7cf03d;
+    border-radius: 50%;
+    animation: rotate-border 2s linear infinite;
+    z-index: 1;
+}
+
+.about-image img {
+    width: 320px;
+    height: 320px;
+    object-fit: centre;
+    border-radius: 50%;
+    filter: grayscale(20%);
+    padding: 8px;
+    position: relative;
+    z-index: 2;
+}
