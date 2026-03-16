@@ -1,0 +1,271 @@
+*{
+    margin: 0.0%;
+    padding: 0.1%;
+}
+body{
+    background-color: black;
+    
+}
+
+
+.header {
+    position: fixed;
+    font-family: Amatic SC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    height: 60px;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar a{
+    color: bisque;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+
+    
+    
+}
+.navbar a:hover {
+  color: orange;
+}
+#about-me,
+#services,
+#contact {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.menu{
+    color: bisque;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+}
+
+.logo{
+    width: 200px;
+    float: left;
+    height: 40px;
+}
+.logo-text{
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    color: orange;
+    line-height: 40px;
+    padding-left: 0px;
+}
+.menu{
+    font-family: Amatic sc;
+    font-size: 18px;
+    width: 400px;
+    float: left !important;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    justify-content: space-between;
+}
+.home-content{
+    width: 40%;
+    color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    margin-right: auto;
+    order: 1;
+}
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 20px;
+    margin-top: 80px;
+}
+.home-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    width: 90%;
+    
+    overflow: hidden;
+    }
+ .home-image img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 40%;
+    border: 5px ;
+    
+}
+
+.about-content{
+    width: 40%;
+    color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    margin-right: auto;
+    order: 2;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 20px;
+    margin-top: 80px;
+}
+.about-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    width: 90%;
+    }
+ .about-image img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 40%;
+    border: 5px ;
+    
+}
+
+
+.service-content{
+     width: 40%;
+    color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    margin-right: auto;
+    order: 1;
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 20px;
+    margin-top: 80px;
+}
+.service-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    width: 90%;
+    overflow: hidden;
+    
+    }
+ .service-image img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 40%;
+    border: 5px ;
+
+    
+}
+#about-me {
+  margin-bottom: -500px; /* Reduce this value */
+}
+
+#services {
+  margin-top: 20px; /* Reduce this too */
+}
+
+#contact {
+  margin-top: 20px; /* Reduce this too */
+}
+@property --angle{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+.home-image ::after ,.home-image::before{
+    content: '';
+    position: absolute;
+    height: 99%;
+    width: 21%;
+    background-image: conic-gradient(from var(--angle),transparent 70%, red);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -3;
+    padding: 0;
+    border-radius: 30%;
+    animation: 3s spin linear infinite;
+}
+
+.about-image::before{
+    filter:blur(1.5rem);
+    opacity: 0.59;
+}
+.about-image ::after ,.home-image::before{
+    content: '';
+    position: absolute;
+    height: 99%;
+    width: 21%;
+    background-image: conic-gradient(from var(--angle),transparent 70%, red);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -3;
+    padding: 0;
+    border-radius: 30%;
+    animation: 3s spin linear infinite;
+}
+
+.service-image::before{
+    filter:blur(1.5rem);
+    opacity: 0.59;
+}
+
+.service-image ::after ,.home-image::before{
+    content: '';
+    position: absolute;
+    height: 99%;
+    width: 21%;
+    background-image: conic-gradient(from var(--angle),transparent 70%, red);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -3;
+    padding: 0;
+    border-radius: 30%;
+    animation: 3s spin linear infinite;
+}
+
+.service-image::before{
+    filter:blur(1.5rem);
+    opacity: 0.59;
+}
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
